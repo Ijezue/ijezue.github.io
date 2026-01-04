@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Academic Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            color: #2196F3;
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            margin-bottom: 1.5rem;
+        }
+
+        .key-features {
+            margin-bottom: 1.5rem;
+        }
+
+        .key-features h4 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .key-features ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .key-features li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .key-features li::before {
+            content: "•";
+            color: #2196F3;
+            position: absolute;
+            left: 0;
+        }
+
+        .skills-section {
+            margin-top: 1.5rem;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .skill-tag {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        .project-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-title-group {
+            flex-grow: 1;
+        }
+
+        .project-timeline {
+            font-size: 0.9rem;
+            color: #1976d2;
+            background: #e3f2fd;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .project-card {
+                padding: 1.5rem;
+            }
+
+            .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Projects</h2>
+
+	<!-- Benchmarking NP-hard problems with QAO -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h3 class="project-title"><a href="https://github.com/gzquse/DEAL_QUBO">Benchmarking NP-hard problems with QAOA</a></h3>
+                </div>
+                <span class="project-timeline">Jan 2025 - May 2025</span>
+            </div>
+            <div class="project-description">
+                <p>A group research project assessing the effectiveness of the Quantum Approximate Optimization Algorithm (QAOA) in solving canonical NP-hard problems, including Knapsack, MAXCUT, and the Traveling Salesman Problem (TSP).</p>
+            </div>
+            <div class="key-features">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Implementation of QAOA on small-scale problems</li>
+                    <li>Hybrid quantum-classical optimization</li>
+                    <li>Benchmarking against classical algorithms</li>
+                    <li>Analysis of convergence and performance on IBM hardware</li>
+                </ul>
+            </div>
+            <div class="skills-section">
+                <h4>Technologies & Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Qiskit</span>
+                    <span class="skill-tag">Quantum Computing</span>
+                    <span class="skill-tag">IBM Quantum Hardware</span>
+                    <span class="skill-tag">Research</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hope Classification in Textual Data -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h3 class="project-title"><a href="https://github.com/Ijezue/Hope-Classification-in-Textual-Data">Hope Classification in Textual Data</a></h3>
+                </div>
+                <span class="project-timeline">Mar 2025 - May 2025</span>
+            </div>
+            <div class="project-description">
+                <p>A machine learning project focused on classifying hope in textual data, aimed at understanding emotional tones for applications in mental health and social analysis.</p>
+            </div>
+            <div class="key-features">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Text Preprocessing and Feature Extraction</li>
+                    <li>Hope Sentiment Classification Model</li>
+                    <li>Evaluation Metrics for Model Performance</li>
+                    <li>Data Visualization for Insights</li>
+                </ul>
+            </div>
+            <div class="skills-section">
+                <h4>Technologies & Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Natural Language Processing</span>
+                    <span class="skill-tag">Transformer Models</span>
+                    <span class="skill-tag">Data Visualization</span>
+                </div>
+            </div>
+        </div>
+
+	 <!-- Twitter or X Video Transcriber -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h3 class="project-title"><a href="https://github.com/Ijezue/Twitter-or-X-Video-Transcriber">Twitter or X Video Transcriber</a></h3>
+                </div>
+                <span class="project-timeline">Apr 2025 - May 2025</span>
+            </div>
+            <div class="project-description">
+                <p>A tool designed to transcribe videos from Twitter/X /X, enabling users to extract and analyze spoken content for accessibility and data analysis.</p>
+            </div>
+            <div class="key-features">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Video Download and Preprocessing</li>
+                    <li>Speech-to-Text Conversion</li>
+                    <li>Transcription Storage and Export</li>
+                    <li>Integration with Twitter/X API</li>
+                </ul>
+            </div>
+            <div class="skills-section">
+                <h4>Technologies & Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Speech Recognition</span>
+                    <span class="skill-tag">Twitter/X API</span>
+                    <span class="skill-tag">FFmpeg</span>
+                    <span class="skill-tag">Data Processing</span>
+                    <span class="skill-tag">File Handling</span>
+                    <span class="skill-tag">API Integration</span>
+                </div>
+            </div>
+        </div>
+
+	<!-- Advanced Brain Segmentation Using EMCAD -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h3 class="project-title"><a href="https://arxiv.org/abs/2509.05431">Advanced Brain Segmentation Using EMCAD</a></h3>
+                </div>
+                <span class="project-timeline">Aug 2024 - Dec 2024</span>
+            </div>
+            <div class="project-description">
+                <p>Created a CNN-based model using EMCAD to improve brain tumor boundary detection and assist clinical diagnostics.</p>
+            </div>
+            <div class="key-features">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Processed medical imaging datasets for model training</li>
+                    <li>Built and tuned CNN architecture</li>
+                    <li>Validated model accuracy in collaboration with medical professionals</li>
+                </ul>
+            </div>
+            <div class="skills-section">
+                <h4>Technologies & Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">Data Preprocessing</span>
+                    <span class="skill-tag">EMCAD</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">CNN</span>
+                    <span class="skill-tag">Medical Imaging</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Console-based Retrieval-Augmented Generation (RAG) Application -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h3 class="project-title"><a href="https://github.com/Ijezue/Console-based-Retrieval-Augmented-Generation-RAG-application">Console-based Retrieval-Augmented Generation (RAG) Application</a></h3>
+                </div>
+                <span class="project-timeline">Nov 2024 - Dec 2024</span>
+            </div>
+            <div class="project-description">
+                <p>A console-based application leveraging Retrieval-Augmented Generation to provide context-aware responses by combining information retrieval and text generation.</p>
+            </div>
+            <div class="key-features">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Document Retrieval System</li>
+                    <li>Context-aware Text Generation</li>
+                    <li>Efficient Query Processing</li>
+                </ul>
+            </div>
+            <div class="skills-section">
+                <h4>Technologies & Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Transformers</span>
+                    <span class="skill-tag">Natural Language Processing</span>
+                    <span class="skill-tag">Information Retrieval</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secure Key Exchange AES and RSA -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h3 class="project-title"><a href="https://github.com/Ijezue/Secure-key-exchange-AES-and-RSA">Secure Key Exchange AES and RSA</a></h3>
+                </div>
+                <span class="project-timeline">Feb 2024 - Mar 2024</span>
+            </div>
+            <div class="project-description">
+                <p>A cybersecurity project implementing secure key exchange using AES and RSA algorithms to ensure encrypted communication between parties.</p>
+            </div>
+            <div class="key-features">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>RSA-based Key Exchange</li>
+                    <li>AES Encryption for Data Security</li>
+                    <li>Secure Communication Protocol</li>
+                    <li>Key Generation and Management</li>
+                </ul>
+            </div>
+            <div class="skills-section">
+                <h4>Technologies & Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Cryptography</span>
+                    <span class="skill-tag">AES & RSA</span>
+                    <span class="skill-tag">Cybersecurity</span>
+                    <span class="skill-tag">Key Management</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
